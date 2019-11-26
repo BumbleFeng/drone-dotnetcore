@@ -9,6 +9,7 @@ steps:
   image: plugins/docker
   settings:
     username: bumblefeng
-    password: 7718b26a-aaf6-4a4f-9fee-34d4f0a11d90
+    password:
+      from_secret: password
     repo: bumblefeng/dotnetcore-container
     dockerfile: Web/Dockerfile
