@@ -6,6 +6,9 @@ steps:
   commands:
     - sh build.sh
 - name: build-image
-  image: plugins/docker:18
-  command:
-    - docker build -t bumblefeng/dotnetcore-container ./Web
+  image: plugins/docker
+  settings:
+    username: bumblefeng
+    password: 7718b26a-aaf6-4a4f-9fee-34d4f0a11d90
+    repo: dotnetcore-container
+    dockerfile: Web/Dockerfile
