@@ -1,8 +1,8 @@
 pipeline:
-    compile:
-        image: microsoft/aspnetcore-build
-        commands:
-            - sh build.sh
-    build-image:
-        command:
-            - docker build -t bumblefeng/dotnetcore-container ./Web
+  compile:
+    image: microsoft/aspnetcore-build
+    commands:
+      - sh build.sh
+  build-image:
+    command:
+      - docker build -t bumblefeng/dotnetcore-container ./Web
